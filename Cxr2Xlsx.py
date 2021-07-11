@@ -10,8 +10,8 @@ from PySide2.QtWidgets import QApplication, QCheckBox, QGroupBox, QHBoxLayout,  
 appname = '''Cxr2xlsx'''
 appmessage = '''Cxr文件转为xlsx文件'''
 author = '''ordinary-student'''
-version = 'v1.0.0'
-last_update = '2021-07-04'
+version = '''v1.0.1'''
+last_update = '''2021-07-12'''
 
 
 class MVariable(object):
@@ -246,7 +246,7 @@ class Cxr2Xlsx(QMainWindow):
         '''关于'''
         # 显示弹窗
         QMessageBox.about(self, f'关于{appname}',
-                          "{}<br>{}<br>author：<a href='https://github.com/ordinary-student'>{}</a><br>版本：{}<br>Last-Update：{}<br>© Copyright {}".format(appname, appmessage, author, version, last_update, last_update[0:4]))
+                          "{}<br>{}<br>author：<a href='https://github.com/ordinary-student'>{}</a><br>版本：{}<br>Last-Update：{}".format(appname, appmessage, author, version, last_update))
 
     def nowtime(self, mode: int = 0) -> str:
         '''当前时间'''
